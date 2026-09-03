@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# Scikit-Learn Model Binaries & DB (Local Runtime)
+*.pkl
+*.db
+athlete360-backend/athlete360.db
+athlete360-backend/model.pkl
+athlete360-backend/injury_model.pkl
+
+# Node / Vite
+node_modules/
+dist/
+.npm
+*.log
+
+# Environment variables
+.env
+.env.local
