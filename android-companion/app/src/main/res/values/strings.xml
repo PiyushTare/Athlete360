@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Athlete 360 Companion</string>
+    <string name="app_subtitle">Fastrack Watch &amp; Health Connect Sync Bridge</string>
+    <string name="title_health_connect">Health Connect Status</string>
+    <string name="title_vitals_summary">Latest Watch Telemetry</string>
+    <string name="title_sync_controls">Synchronization</string>
+    <string name="title_settings">Server &amp; Account Settings</string>
+
+    <string name="action_sync_now">Sync to Athlete 360</string>
+    <string name="action_grant_permissions">Grant Health Permissions</string>
+    <string name="action_open_hc_settings">Health Connect Settings</string>
+    <string name="action_save_settings">Save Configuration</string>
+
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_no_data">No data available</string>
+    <string name="status_awaiting_sync">Awaiting synchronization</string>
+    
+    <string name="privacy_policy_title">Athlete 360 Health Connect Privacy Policy</string>
+    <string name="privacy_policy_content">Athlete 360 Companion accesses your health records (Heart Rate, SpO2, Steps, Calories, and Sleep Duration) stored in Health Connect solely to synchronize them with your authenticated Athlete 360 account.\n\nAll health readings are transmitted securely over encrypted network connections directly to your designated Athlete 360 server. Your health data is never shared with third parties or advertisers, and permissions can be revoked at any time through Android Health Connect settings.</string>
+</resources>

@@ -1,0 +1,186 @@
+{
+  "model_version": "Athlete360 Readiness Model v1.0",
+  "creation_timestamp": "2026-10-04T23:18:13.235642",
+  "selected_model": "Random Forest Classifier",
+  "selection_rationale": "Random Forest selected (Composite Score: 0.7729 vs 0.7202). Achieved higher NOT READY recall (0.7441) and superior ROC-AUC (0.8323), effectively minimizing dangerous false-fit clearances.",
+  "training_samples": 2560,
+  "test_samples": 640,
+  "features": [
+    "heart_rate",
+    "baseline_hr",
+    "hr_deviation_bpm",
+    "spo2",
+    "spo2_deviation",
+    "daily_steps",
+    "step_trend_pct",
+    "sleep_duration_hours",
+    "sleep_quality_1_10",
+    "fatigue_1_10",
+    "muscle_soreness_1_10",
+    "recovery_score_perceived_1_10",
+    "physical_readiness_1_10",
+    "mental_readiness_1_10",
+    "protein_intake_grams",
+    "water_intake_liters",
+    "nutrition_adequate",
+    "training_duration_minutes",
+    "training_intensity_1_10",
+    "rpe_1_10",
+    "sessions_last_7d",
+    "high_intensity_sessions_7d",
+    "hours_since_intense_session",
+    "sport_Football",
+    "sport_Badminton",
+    "sport_Cricket",
+    "sport_Basketball",
+    "sport_Tennis",
+    "sport_Running",
+    "sport_Volleyball"
+  ],
+  "models_comparison": {
+    "random_forest": {
+      "model_name": "Random Forest Classifier",
+      "best_params": {
+        "class_weight": "balanced",
+        "max_depth": 6,
+        "min_samples_leaf": 1,
+        "min_samples_split": 5,
+        "n_estimators": 150
+      },
+      "cv_recall_score": 0.7604218967921896,
+      "test_accuracy": 0.7625,
+      "test_precision": 0.7298136645962733,
+      "test_recall_fit": 0.7833333333333333,
+      "test_recall_not_ready": 0.7441176470588236,
+      "test_f1_score": 0.7556270096463023,
+      "test_roc_auc": 0.8323235294117647,
+      "test_brier_score": 0.1739897018754216,
+      "confusion_matrix": [
+        [
+          253,
+          87
+        ],
+        [
+          65,
+          235
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "model_name": "Regularized Logistic Regression",
+      "best_params": {
+        "classifier__C": 0.01,
+        "classifier__solver": "liblinear"
+      },
+      "cv_recall_score": 0.7345083682008369,
+      "test_accuracy": 0.7328125,
+      "test_precision": 0.680672268907563,
+      "test_recall_fit": 0.81,
+      "test_recall_not_ready": 0.6647058823529411,
+      "test_f1_score": 0.7397260273972602,
+      "test_roc_auc": 0.7996666666666666,
+      "test_brier_score": 0.18478520774510465,
+      "confusion_matrix": [
+        [
+          226,
+          114
+        ],
+        [
+          57,
+          243
+        ]
+      ]
+    }
+  },
+  "feature_importances_rf": {
+    "heart_rate": 0.0652,
+    "baseline_hr": 0.0171,
+    "hr_deviation_bpm": 0.1401,
+    "spo2": 0.0121,
+    "spo2_deviation": 0.0132,
+    "daily_steps": 0.0148,
+    "step_trend_pct": 0.0147,
+    "sleep_duration_hours": 0.1531,
+    "sleep_quality_1_10": 0.0222,
+    "fatigue_1_10": 0.0818,
+    "muscle_soreness_1_10": 0.0922,
+    "recovery_score_perceived_1_10": 0.1061,
+    "physical_readiness_1_10": 0.0753,
+    "mental_readiness_1_10": 0.0478,
+    "protein_intake_grams": 0.0173,
+    "water_intake_liters": 0.015,
+    "nutrition_adequate": 0.0017,
+    "training_duration_minutes": 0.0167,
+    "training_intensity_1_10": 0.0142,
+    "rpe_1_10": 0.015,
+    "sessions_last_7d": 0.0094,
+    "high_intensity_sessions_7d": 0.0254,
+    "hours_since_intense_session": 0.0156,
+    "sport_Football": 0.0015,
+    "sport_Badminton": 0.0012,
+    "sport_Cricket": 0.0035,
+    "sport_Basketball": 0.0021,
+    "sport_Tennis": 0.0019,
+    "sport_Running": 0.0014,
+    "sport_Volleyball": 0.0023
+  },
+  "top_features": {
+    "sleep_duration_hours": 0.1531,
+    "hr_deviation_bpm": 0.1401,
+    "recovery_score_perceived_1_10": 0.1061,
+    "muscle_soreness_1_10": 0.0922,
+    "fatigue_1_10": 0.0818,
+    "physical_readiness_1_10": 0.0753,
+    "heart_rate": 0.0652,
+    "mental_readiness_1_10": 0.0478,
+    "high_intensity_sessions_7d": 0.0254,
+    "sleep_quality_1_10": 0.0222
+  },
+  "logistic_regression_coefficients": {
+    "heart_rate": -0.1897,
+    "baseline_hr": 0.0971,
+    "hr_deviation_bpm": -0.3435,
+    "spo2": 0.0516,
+    "spo2_deviation": -0.0308,
+    "daily_steps": -0.0306,
+    "step_trend_pct": -0.0457,
+    "sleep_duration_hours": 0.5817,
+    "sleep_quality_1_10": 0.1016,
+    "fatigue_1_10": -0.1698,
+    "muscle_soreness_1_10": -0.2899,
+    "recovery_score_perceived_1_10": 0.2455,
+    "physical_readiness_1_10": 0.1377,
+    "mental_readiness_1_10": 0.0891,
+    "protein_intake_grams": 0.0439,
+    "water_intake_liters": 0.0231,
+    "nutrition_adequate": 0.0426,
+    "training_duration_minutes": -0.0897,
+    "training_intensity_1_10": 0.0317,
+    "rpe_1_10": -0.0413,
+    "sessions_last_7d": -0.0436,
+    "high_intensity_sessions_7d": -0.1904,
+    "hours_since_intense_session": 0.0196,
+    "sport_Football": -0.0217,
+    "sport_Badminton": 0.0163,
+    "sport_Cricket": -0.1346,
+    "sport_Basketball": 0.1185,
+    "sport_Tennis": -0.0678,
+    "sport_Running": 0.0221,
+    "sport_Volleyball": 0.0693
+  },
+  "data_sources": [
+    "Kaggle AFR-1000 (Athlete Fatigue Risk)",
+    "Kaggle SIRP-600 (Sports Injury Risk Prediction)",
+    "Kaggle Athlete Recovery & Biometric Longitudinal Dataset",
+    "Athlete360 Platform Telemetry & Baselines"
+  ],
+  "sports_supported": [
+    "Football",
+    "Badminton",
+    "Cricket",
+    "Basketball",
+    "Tennis",
+    "Running",
+    "Volleyball"
+  ]
+}

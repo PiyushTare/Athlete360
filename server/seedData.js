@@ -1,0 +1,972 @@
+// Rich, realistic initial data for Athlete 360
+// All data is realistic and labeled as fictional demo data for testing & evaluation.
+
+export const initialData = {
+  users: [
+    {
+      id: "coach-1",
+      email: "coach.marcus@athlete360.com",
+      password_hash: "athlete360",
+      role: "coach",
+      full_name: "Coach Marcus Vance",
+      avatar_url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80",
+      phone: "+1 (555) 234-5678",
+      created_at: "2026-01-15T08:00:00Z"
+    },
+    {
+      id: "athlete-1",
+      email: "alex.chen@athlete360.com",
+      password_hash: "athlete360",
+      role: "athlete",
+      full_name: "Alex Chen",
+      avatar_url: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&auto=format&fit=crop&q=80",
+      phone: "+1 (555) 345-6789",
+      created_at: "2026-02-01T08:00:00Z"
+    },
+    {
+      id: "athlete-2",
+      email: "maya.lin@athlete360.com",
+      password_hash: "athlete360",
+      role: "athlete",
+      full_name: "Maya Lin",
+      avatar_url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=200&auto=format&fit=crop&q=80",
+      phone: "+1 (555) 456-7890",
+      created_at: "2026-02-05T08:00:00Z"
+    },
+    {
+      id: "athlete-3",
+      email: "jordan.taylor@athlete360.com",
+      password_hash: "athlete360",
+      role: "athlete",
+      full_name: "Jordan Taylor",
+      avatar_url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80",
+      phone: "+1 (555) 567-8901",
+      created_at: "2026-02-10T08:00:00Z"
+    },
+    {
+      id: "athlete-4",
+      email: "sofia.rodriguez@athlete360.com",
+      password_hash: "athlete360",
+      role: "athlete",
+      full_name: "Sofia Rodriguez",
+      avatar_url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
+      phone: "+1 (555) 678-9012",
+      created_at: "2026-02-15T08:00:00Z"
+    },
+    {
+      id: "athlete-5",
+      email: "liam.walker@athlete360.com",
+      password_hash: "athlete360",
+      role: "athlete",
+      full_name: "Liam Walker",
+      avatar_url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&auto=format&fit=crop&q=80",
+      phone: "+1 (555) 789-0123",
+      created_at: "2026-02-20T08:00:00Z"
+    }
+  ],
+
+  coach_profiles: [
+    {
+      id: "cp-1",
+      user_id: "coach-1",
+      organization: "Apex High Performance Institute",
+      specialization: "Court Athletics, Agility, Speed, Reaction & Endurance Performance",
+      experience_years: 14,
+      bio: "Former Olympic sprinter turned Master Performance Coach. Specializes in biomechanical acceleration, neurological readiness tracking, and periodized tapering.",
+      certifications: ["USATF Level 3", "CSCS Elite", "EXOS Performance Specialist"]
+    }
+  ],
+
+  athlete_profiles: [
+    {
+      id: "ap-1",
+      user_id: "athlete-1",
+      dob: "2002-04-15",
+      gender: "Male",
+      sport: "Court Performance",
+      position_specialization: "Speed, Footwork & Reaction Specialist",
+      height_cm: 184,
+      weight_kg: 78.5,
+      preferred_category: "Speed and Agility",
+      experience_level: "Elite",
+      injury_history: "Mild right hamstring tightness (fully resolved Oct 2025)",
+      training_goals: "Top tier championship ranking, achieve 95% training adherence ahead of State Trials",
+      performance_score: 94,
+      consistency_score: 96,
+      current_readiness_status: "Green",
+      readiness_score: 92,
+      weekly_training_hours: 14.5,
+      streak_days: 14
+    },
+    {
+      id: "ap-2",
+      user_id: "athlete-2",
+      dob: "2003-08-22",
+      gender: "Female",
+      sport: "Court Performance",
+      position_specialization: "Singles Court Specialist",
+      height_cm: 176,
+      weight_kg: 64.0,
+      preferred_category: "Speed and Agility",
+      experience_level: "Elite",
+      injury_history: "Minor left shoulder tightness (under physical therapy maintenance)",
+      training_goals: "Top-20 National Ranking, improve court speed and footwork recovery",
+      performance_score: 89,
+      consistency_score: 92,
+      current_readiness_status: "Green",
+      readiness_score: 88,
+      weekly_training_hours: 16.0,
+      streak_days: 9
+    },
+    {
+      id: "ap-3",
+      user_id: "athlete-3",
+      dob: "2001-11-03",
+      gender: "Male",
+      sport: "Court Performance",
+      position_specialization: "All-Court Transition Specialist",
+      height_cm: 188,
+      weight_kg: 84.2,
+      preferred_category: "Speed and Agility",
+      experience_level: "Advanced",
+      injury_history: "Right ankle inversion sprain Grade 1 (cleared, tape required)",
+      training_goals: "Improve sprint reaction time, increase match performance consistency",
+      performance_score: 82,
+      consistency_score: 85,
+      current_readiness_status: "Yellow",
+      readiness_score: 68,
+      weekly_training_hours: 11.0,
+      streak_days: 4
+    },
+    {
+      id: "ap-4",
+      user_id: "athlete-4",
+      dob: "2004-02-18",
+      gender: "Female",
+      sport: "Court Performance",
+      position_specialization: "Doubles & Singles Specialist",
+      height_cm: 171,
+      weight_kg: 62.0,
+      preferred_category: "Technical Practice",
+      experience_level: "Elite",
+      injury_history: "No significant injuries recorded",
+      training_goals: "Top-10 Ranking, improve precision and agility placement",
+      performance_score: 91,
+      consistency_score: 94,
+      current_readiness_status: "Green",
+      readiness_score: 95,
+      weekly_training_hours: 15.2,
+      streak_days: 18
+    },
+    {
+      id: "ap-5",
+      user_id: "athlete-5",
+      dob: "2002-09-30",
+      gender: "Male",
+      sport: "Court Performance",
+      position_specialization: "Court Defense & Stamina Specialist",
+      height_cm: 181,
+      weight_kg: 75.8,
+      preferred_category: "Cardio",
+      experience_level: "Advanced",
+      injury_history: "Bilateral tibial stress reaction / shin splints risk under high volume",
+      training_goals: "Build baseline rally stamina, minimize reaction recovery lag",
+      performance_score: 75,
+      consistency_score: 78,
+      current_readiness_status: "Red",
+      readiness_score: 46,
+      weekly_training_hours: 9.5,
+      streak_days: 2
+    }
+  ],
+
+  coach_athlete_assignments: [
+    { id: "caa-1", coach_id: "coach-1", athlete_id: "athlete-1", status: "active", assigned_at: "2026-02-01" },
+    { id: "caa-2", coach_id: "coach-1", athlete_id: "athlete-2", status: "active", assigned_at: "2026-02-05" },
+    { id: "caa-3", coach_id: "coach-1", athlete_id: "athlete-3", status: "active", assigned_at: "2026-02-10" },
+    { id: "caa-4", coach_id: "coach-1", athlete_id: "athlete-4", status: "active", assigned_at: "2026-02-15" },
+    { id: "caa-5", coach_id: "coach-1", athlete_id: "athlete-5", status: "active", assigned_at: "2026-02-20" }
+  ],
+
+  training_tasks: [
+    {
+      id: "task-1",
+      coach_id: "coach-1",
+      title: "Explosive Block Starts & 30m Acceleration",
+      description: "Focus on 45-degree body lean, triple extension, and ground reaction forces during the first 6 strides.",
+      category: "Speed and Agility",
+      priority: "High",
+      estimated_duration_mins: 50,
+      instructions: "Perform 3 x 30m block starts at 90% effort with 4 min recovery. Follow with 4 x 30m maximum effort starts timed with laser traps. Log 10m split and ground contact feel.",
+      attachment_url: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800",
+      video_url: "https://example.com/videos/sprint-start-mechanics.mp4",
+      due_date: "2026-09-28T18:00:00Z",
+      assigned_to: "athlete-1", // or 'all'
+      created_at: "2026-09-25T10:00:00Z"
+    },
+    {
+      id: "task-2",
+      coach_id: "coach-1",
+      title: "Heavy Trap-Bar Deadlift & Contrast Jumps",
+      description: "Potentiation complex for posterior chain rate of force development (RFD).",
+      category: "Strength Training",
+      priority: "Medium",
+      estimated_duration_mins: 60,
+      instructions: "4 sets of: 3 reps Trap Bar Deadlift @ 85% 1RM immediately paired with 3 Hurdle Hops into broad jump. 3 minutes rest between sets.",
+      attachment_url: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800",
+      video_url: "",
+      due_date: "2026-09-27T20:00:00Z",
+      assigned_to: "athlete-1",
+      created_at: "2026-09-25T11:00:00Z"
+    },
+    {
+      id: "task-3",
+      coach_id: "coach-1",
+      title: "Active Recovery & Mobility Flow",
+      description: "Low-impact tissue regeneration, hip capsule mobility, and breathwork.",
+      category: "Recovery",
+      priority: "Low",
+      estimated_duration_mins: 35,
+      instructions: "15 min gentle stationary cycle (HR < 120 bpm), 10 min 90/90 hip mobility and thoracic spine rotations, 10 min box breathing (4-4-4-4).",
+      attachment_url: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800",
+      video_url: "",
+      due_date: "2026-09-26T21:00:00Z",
+      assigned_to: "athlete-5",
+      created_at: "2026-09-26T07:30:00Z"
+    },
+    {
+      id: "task-4",
+      coach_id: "coach-1",
+      title: "Hypoxic Threshold Swim Intervals",
+      description: "Lactate clearance and stroke efficiency under oxygen debt.",
+      category: "Endurance",
+      priority: "High",
+      estimated_duration_mins: 75,
+      instructions: "Warmup: 400m choice. Main set: 8 x 100m Butterfly on 1:40 holding race pace. Cool down: 200m backstroke easy.",
+      attachment_url: "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800",
+      video_url: "",
+      due_date: "2026-09-28T12:00:00Z",
+      assigned_to: "athlete-2",
+      created_at: "2026-09-25T09:00:00Z"
+    },
+    {
+      id: "task-5",
+      coach_id: "coach-1",
+      title: "Lateral Agility & Pick-and-Roll Decision Drills",
+      description: "Cognitive-motor agility testing and lateral defensive recovery.",
+      category: "Speed and Agility",
+      priority: "Medium",
+      estimated_duration_mins: 45,
+      instructions: "Reactive cone drills with visual light cues. 5 sets of 45 seconds max intensity with 90s active rest.",
+      attachment_url: "",
+      video_url: "",
+      due_date: "2026-09-29T16:00:00Z",
+      assigned_to: "athlete-3",
+      created_at: "2026-09-26T12:00:00Z"
+    },
+    {
+      id: "task-6",
+      coach_id: "coach-1",
+      title: "First Serve Target Precision & Core Stability",
+      description: "Wide angle and T-serve velocity control with anti-rotational core work.",
+      category: "Technical Practice",
+      priority: "High",
+      estimated_duration_mins: 60,
+      instructions: "Serve 60 balls to designated corners aiming for 70%+ accuracy. Finish with Pallof presses and side planks.",
+      attachment_url: "",
+      video_url: "",
+      due_date: "2026-09-27T17:00:00Z",
+      assigned_to: "athlete-4",
+      created_at: "2026-09-25T14:00:00Z"
+    },
+    {
+      id: "task-7",
+      coach_id: "coach-1",
+      title: "Pre-Match Tactical Walkthrough & Reaction Drills",
+      description: "Low-fatigue neuromuscular priming ahead of the upcoming championship match.",
+      category: "Match Preparation",
+      priority: "High",
+      estimated_duration_mins: 40,
+      instructions: "Review tactical playbook for 15 mins, perform 15 mins reactive footwork ladder drills, 10 min dynamic stretching.",
+      attachment_url: "",
+      video_url: "",
+      due_date: "2026-09-30T10:00:00Z",
+      assigned_to: "athlete-1",
+      created_at: "2026-09-26T11:00:00Z"
+    }
+  ],
+
+  task_completions: [
+    {
+      id: "tc-1",
+      task_id: "task-2",
+      athlete_id: "athlete-1",
+      status: "Completed",
+      started_at: "2026-09-26T14:00:00Z",
+      completed_at: "2026-09-26T15:05:00Z",
+      actual_duration_mins: 65,
+      metrics_json: {
+        deadlift_kg: 165,
+        sets_completed: 4,
+        reps_per_set: 3,
+        rpe: 8,
+        jump_height_cm: 64
+      },
+      proof_url: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800",
+      athlete_notes: "Felt very explosive on the contrast jumps. Hip extension was snappy and bar speed stayed above 0.75 m/s.",
+      coach_feedback: "Excellent form and power transfer, Alex. Bar velocity data confirms your neural drive is primed for the trials.",
+      coach_rating: 5,
+      feedback_at: "2026-09-26T16:30:00Z"
+    },
+    {
+      id: "tc-2",
+      task_id: "task-1",
+      athlete_id: "athlete-1",
+      status: "In Progress",
+      started_at: "2026-09-26T17:15:00Z",
+      completed_at: null,
+      actual_duration_mins: null,
+      metrics_json: {},
+      proof_url: "",
+      athlete_notes: "Completed warmups and first 2 block starts. Moving into laser-timed efforts now.",
+      coach_feedback: null,
+      coach_rating: null,
+      feedback_at: null
+    },
+    {
+      id: "tc-3",
+      task_id: "task-3",
+      athlete_id: "athlete-5",
+      status: "Pending",
+      started_at: null,
+      completed_at: null,
+      actual_duration_mins: null,
+      metrics_json: {},
+      proof_url: "",
+      athlete_notes: "",
+      coach_feedback: null,
+      coach_rating: null,
+      feedback_at: null
+    },
+    {
+      id: "tc-4",
+      task_id: "task-4",
+      athlete_id: "athlete-2",
+      status: "Completed",
+      started_at: "2026-09-26T08:00:00Z",
+      completed_at: "2026-09-26T09:18:00Z",
+      actual_duration_mins: 78,
+      metrics_json: {
+        total_distance_m: 2800,
+        avg_split_100m: "1:07.4",
+        peak_hr: 178,
+        rpe: 9
+      },
+      proof_url: "",
+      athlete_notes: "Holding cadence was challenging on reps 6 and 7, but recovered well in cooldown.",
+      coach_feedback: "Superb pacing consistency Maya. Clean flip turns.",
+      coach_rating: 5,
+      feedback_at: "2026-09-26T11:00:00Z"
+    },
+    {
+      id: "tc-5",
+      task_id: "task-5",
+      athlete_id: "athlete-3",
+      status: "Pending",
+      started_at: null,
+      completed_at: null,
+      actual_duration_mins: null,
+      metrics_json: {},
+      proof_url: "",
+      athlete_notes: "",
+      coach_feedback: null,
+      coach_rating: null,
+      feedback_at: null
+    },
+    {
+      id: "tc-6",
+      task_id: "task-6",
+      athlete_id: "athlete-4",
+      status: "Completed",
+      started_at: "2026-09-26T10:00:00Z",
+      completed_at: "2026-09-26T11:00:00Z",
+      actual_duration_mins: 60,
+      metrics_json: {
+        serves_hit: 60,
+        serves_in: 47,
+        accuracy_pct: 78.3,
+        peak_velocity_kmh: 176
+      },
+      proof_url: "",
+      athlete_notes: "Serve rhythm was sharp, especially down the T on the deuce side.",
+      coach_feedback: "Great toss placement Sofia! 78% accuracy meets our championship benchmark.",
+      coach_rating: 5,
+      feedback_at: "2026-09-26T12:30:00Z"
+    }
+  ],
+
+  athlete_vitals: [
+    // Alex Chen recent 7 days vitals
+    {
+      id: "vit-1",
+      athlete_id: "athlete-1",
+      recorded_date: "2026-09-26",
+      resting_heart_rate: 49,
+      blood_pressure_sys: 116,
+      blood_pressure_dia: 74,
+      sleep_hours: 8.2,
+      sleep_quality: 5,
+      body_temp: 36.5,
+      spo2: 99,
+      fatigue_level: 2,
+      soreness_level: 2,
+      hydration_level: "Optimal",
+      training_intensity_recent: "Moderate",
+      pain_symptoms: "None"
+    },
+    {
+      id: "vit-2",
+      athlete_id: "athlete-1",
+      recorded_date: "2026-09-25",
+      resting_heart_rate: 51,
+      blood_pressure_sys: 118,
+      blood_pressure_dia: 76,
+      sleep_hours: 7.8,
+      sleep_quality: 4,
+      body_temp: 36.6,
+      spo2: 98,
+      fatigue_level: 3,
+      soreness_level: 3,
+      hydration_level: "Optimal",
+      training_intensity_recent: "High",
+      pain_symptoms: "None"
+    },
+    {
+      id: "vit-3",
+      athlete_id: "athlete-1",
+      recorded_date: "2026-09-24",
+      resting_heart_rate: 50,
+      blood_pressure_sys: 115,
+      blood_pressure_dia: 73,
+      sleep_hours: 8.0,
+      sleep_quality: 5,
+      body_temp: 36.5,
+      spo2: 99,
+      fatigue_level: 2,
+      soreness_level: 3,
+      hydration_level: "Optimal",
+      training_intensity_recent: "Moderate",
+      pain_symptoms: "None"
+    },
+    {
+      id: "vit-4",
+      athlete_id: "athlete-1",
+      recorded_date: "2026-09-23",
+      resting_heart_rate: 53,
+      blood_pressure_sys: 120,
+      blood_pressure_dia: 78,
+      sleep_hours: 7.2,
+      sleep_quality: 4,
+      body_temp: 36.7,
+      spo2: 98,
+      fatigue_level: 4,
+      soreness_level: 4,
+      hydration_level: "Adequate",
+      training_intensity_recent: "High",
+      pain_symptoms: "Mild calves tightness"
+    },
+    {
+      id: "vit-5",
+      athlete_id: "athlete-1",
+      recorded_date: "2026-09-22",
+      resting_heart_rate: 48,
+      blood_pressure_sys: 114,
+      blood_pressure_dia: 72,
+      sleep_hours: 8.5,
+      sleep_quality: 5,
+      body_temp: 36.4,
+      spo2: 99,
+      fatigue_level: 2,
+      soreness_level: 1,
+      hydration_level: "Optimal",
+      training_intensity_recent: "Light",
+      pain_symptoms: "None"
+    },
+
+    // Jordan Taylor (Yellow flag - elevated HR, moderate fatigue)
+    {
+      id: "vit-6",
+      athlete_id: "athlete-3",
+      recorded_date: "2026-09-26",
+      resting_heart_rate: 64,
+      blood_pressure_sys: 126,
+      blood_pressure_dia: 82,
+      sleep_hours: 6.1,
+      sleep_quality: 3,
+      body_temp: 36.8,
+      spo2: 97,
+      fatigue_level: 6,
+      soreness_level: 6,
+      hydration_level: "Adequate",
+      training_intensity_recent: "High",
+      pain_symptoms: "Mild right ankle stiffness"
+    },
+
+    // Liam Walker (Red flag - high fatigue, low sleep, acute soreness)
+    {
+      id: "vit-7",
+      athlete_id: "athlete-5",
+      recorded_date: "2026-09-26",
+      resting_heart_rate: 72,
+      blood_pressure_sys: 132,
+      blood_pressure_dia: 86,
+      sleep_hours: 4.8,
+      sleep_quality: 2,
+      body_temp: 37.2,
+      spo2: 95,
+      fatigue_level: 8,
+      soreness_level: 8,
+      hydration_level: "Low",
+      training_intensity_recent: "Maximum/Competition",
+      pain_symptoms: "Bilateral shin splint pain on impact (6/10)"
+    }
+  ],
+
+  readiness_assessments: [
+    {
+      id: "ra-1",
+      athlete_id: "athlete-1",
+      vitals_id: "vit-1",
+      date: "2026-09-26",
+      readiness_score: 94,
+      readiness_status: "Green",
+      ai_insights: "Autonomic nervous system in peak parasympathetic state. RHR is 49 bpm (3 bpm below 14-day baseline), SpO2 99%, sleep duration optimal at 8.2 hrs. Musculoskeletal markers clear.",
+      factors_breakdown: {
+        autonomic_cardiovascular: 96,
+        sleep_recovery: 95,
+        neuromuscular_soreness: 92,
+        hydration_systemic: 94
+      },
+      recommended_intensity_pct: 100,
+      recovery_suggestions: [
+        "Full planned high-intensity training permitted (100% capacity)",
+        "Incorporate potentiation drills and explosive speed tests",
+        "Target post-workout hydration of 750ml electrolyte fluid within 45 mins"
+      ],
+      shared_with_coach: true
+    },
+    {
+      id: "ra-2",
+      athlete_id: "athlete-3",
+      vitals_id: "vit-6",
+      date: "2026-09-26",
+      readiness_score: 68,
+      readiness_status: "Yellow",
+      ai_insights: "Elevated morning resting HR (64 vs 56 baseline) and shortened sleep (6.1h). Reported ankle stiffness and moderate fatigue index of 6/10 suggest delayed recovery from yesterday's scrimmages.",
+      factors_breakdown: {
+        autonomic_cardiovascular: 66,
+        sleep_recovery: 64,
+        neuromuscular_soreness: 70,
+        hydration_systemic: 72
+      },
+      recommended_intensity_pct: 70,
+      recovery_suggestions: [
+        "Caution advised: Modify high-impact plyometrics; reduce jump volume by 30-40%",
+        "Emphasize ankle proprioceptive warm-up and contrast hydrotherapy",
+        "Target 8.5h sleep tonight with cool room temperature (18°C)"
+      ],
+      shared_with_coach: true
+    },
+    {
+      id: "ra-3",
+      athlete_id: "athlete-5",
+      vitals_id: "vit-7",
+      date: "2026-09-26",
+      readiness_score: 46,
+      readiness_status: "Red",
+      ai_insights: "Critical physiological overload markers detected: acute sleep deprivation (4.8h), elevated body temperature (37.2°C), RHR spike (+14 bpm), and bilateral shin pain during impact. High risk of bone stress injury if high loading continues.",
+      factors_breakdown: {
+        autonomic_cardiovascular: 44,
+        sleep_recovery: 38,
+        neuromuscular_soreness: 45,
+        hydration_systemic: 55
+      },
+      recommended_intensity_pct: 35,
+      recovery_suggestions: [
+        "Stop intense running or ballistic jumping immediately",
+        "Substitute with non-impact pool running or gentle stationary cycling",
+        "Consult team athletic trainer/physiotherapist for shin palpation assessment",
+        "Hydrate with 1.5L sodium-enriched fluids throughout the afternoon"
+      ],
+      shared_with_coach: true
+    }
+  ],
+
+  performance_records: [
+    {
+      id: "pr-1",
+      athlete_id: "athlete-1",
+      date: "2026-09-20",
+      metric_name: "100m Sprint Time",
+      value: 10.18,
+      unit: "seconds",
+      category: "Speed",
+      context: "National Athletics Invitational, Austin TX",
+      is_personal_best: true
+    },
+    {
+      id: "pr-2",
+      athlete_id: "athlete-1",
+      date: "2026-08-14",
+      metric_name: "100m Sprint Time",
+      value: 10.25,
+      unit: "seconds",
+      category: "Speed",
+      context: "Regional Sprint Series",
+      is_personal_best: false
+    },
+    {
+      id: "pr-3",
+      athlete_id: "athlete-1",
+      date: "2026-09-18",
+      metric_name: "Standing Broad Jump",
+      value: 3.12,
+      unit: "meters",
+      category: "Power",
+      context: "Testing Lab Combines",
+      is_personal_best: true
+    },
+    {
+      id: "pr-4",
+      athlete_id: "athlete-1",
+      date: "2026-09-10",
+      metric_name: "Max Trap Bar Deadlift",
+      value: 195,
+      unit: "kg",
+      category: "Strength",
+      context: "Gym 1RM Testing",
+      is_personal_best: true
+    },
+    {
+      id: "pr-5",
+      athlete_id: "athlete-2",
+      date: "2026-09-15",
+      metric_name: "100m Butterfly",
+      value: 56.42,
+      unit: "seconds",
+      category: "Speed",
+      context: "Grand Prix Aquatics meet",
+      is_personal_best: true
+    },
+    {
+      id: "pr-6",
+      athlete_id: "athlete-4",
+      date: "2026-09-12",
+      metric_name: "First Serve Speed",
+      value: 177.5,
+      unit: "km/h",
+      category: "Velocity",
+      context: "ITF Junior Masters Finals",
+      is_personal_best: true
+    }
+  ],
+
+  tournaments: [
+    {
+      id: "tourn-1",
+      coach_id: "coach-1",
+      name: "National Sprint & Distance Running Championship",
+      sport: "Running",
+      venue: "Olympic Centennial Stadium, Atlanta, GA",
+      start_date: "2026-10-04",
+      end_date: "2026-10-06",
+      category: "Senior Open / Invitational",
+      status: "Upcoming",
+      description: "Premier outdoor meet featuring top ranked sprinters and middle-distance runners.",
+      prize_or_tier: "Tier 1 - National Qualifier"
+    },
+    {
+      id: "tourn-2",
+      coach_id: "coach-1",
+      name: "Metro Autumn Court Masters",
+      sport: "Court Athletics",
+      venue: "Metro Sports Arena, NY",
+      start_date: "2026-09-25",
+      end_date: "2026-09-28",
+      category: "National Court Series 500",
+      status: "Live",
+      description: "Premier indoor court showcase with collegiate and club elite attendance.",
+      prize_or_tier: "Super 500 Series"
+    },
+    {
+      id: "tourn-3",
+      coach_id: "coach-1",
+      name: "National T20 Cricket Invitational Showdown",
+      sport: "Cricket",
+      venue: "Cricket Stadium Complex, Chicago, IL",
+      start_date: "2026-10-15",
+      end_date: "2026-10-18",
+      category: "Elite Premier Division",
+      status: "Upcoming",
+      description: "16-team premier T20 tournament featuring regional championship squads.",
+      prize_or_tier: "Premier Division Cup"
+    },
+    {
+      id: "tourn-4",
+      coach_id: "coach-1",
+      name: "Inter-City Football Championship Cup",
+      sport: "Football",
+      venue: "Olympic Football Stadium, San Diego, CA",
+      start_date: "2026-09-10",
+      end_date: "2026-09-14",
+      category: "Division 1 Championship",
+      status: "Completed",
+      description: "Regional football tournament and scouting showcase.",
+      prize_or_tier: "National Gold Cup"
+    }
+  ],
+
+  tournament_registrations: [
+    { id: "tr-1", tournament_id: "tourn-1", athlete_id: "athlete-1", registration_date: "2026-09-01", status: "Confirmed", seed_number: 2 },
+    { id: "tr-2", tournament_id: "tourn-2", athlete_id: "athlete-4", registration_date: "2026-09-05", status: "Confirmed", seed_number: 1 },
+    { id: "tr-3", tournament_id: "tourn-3", athlete_id: "athlete-3", registration_date: "2026-09-10", status: "Confirmed", seed_number: 4 },
+    { id: "tr-4", tournament_id: "tourn-4", athlete_id: "athlete-2", registration_date: "2026-08-20", status: "Confirmed", seed_number: 3 }
+  ],
+
+  matches: [
+    {
+      id: "match-1",
+      tournament_id: "tourn-1",
+      round: "Men's 100m Semi-Final Heat 2",
+      scheduled_time: "2026-10-04T15:30:00Z",
+      opponent_name: "Darius Sterling (Personal Best: 10.14s)",
+      venue_court: "Track Lane 4",
+      status: "Scheduled",
+      ai_win_probability: 68
+    },
+    {
+      id: "match-2",
+      tournament_id: "tourn-2",
+      round: "Quarter-Finals Singles",
+      scheduled_time: "2026-09-27T14:00:00Z",
+      opponent_name: "Elena Rostova (ITF #38)",
+      venue_court: "Grandstand Court 2",
+      status: "Scheduled",
+      ai_win_probability: 74
+    },
+    {
+      id: "match-3",
+      tournament_id: "tourn-4",
+      round: "100m Butterfly Finals",
+      scheduled_time: "2026-09-14T17:00:00Z",
+      opponent_name: "Kylie Thorne (FINA ranked)",
+      venue_court: "Lane 3",
+      status: "Completed",
+      ai_win_probability: 62
+    }
+  ],
+
+  match_results: [
+    {
+      id: "mr-1",
+      match_id: "match-3",
+      athlete_id: "athlete-2",
+      result: "Win",
+      score_display: "56.42s (Gold Medal 🥇)",
+      ai_win_probability_predicted: 62.0,
+      athlete_stats_json: {
+        reaction_time: "0.64s",
+        split_50m: "26.15s",
+        finish_split: "30.27s"
+      },
+      notes: "Took lead at 65m mark with superior underwater kick off turn 2."
+    }
+  ],
+
+  notifications: [
+    {
+      id: "notif-1",
+      user_id: "athlete-1",
+      title: "New Training Task Assigned",
+      message: "Coach Marcus assigned 'Explosive Block Starts & 30m Acceleration'. Due in 2 days.",
+      type: "task",
+      is_read: false,
+      link_url: "/tasks",
+      created_at: "2026-09-25T10:00:00Z"
+    },
+    {
+      id: "notif-2",
+      user_id: "athlete-1",
+      title: "Coach Feedback Received",
+      message: "Coach Marcus left feedback & a 5-star rating on your Trap Bar Deadlift session!",
+      type: "task",
+      is_read: true,
+      link_url: "/tasks",
+      created_at: "2026-09-26T16:30:00Z"
+    },
+    {
+      id: "notif-3",
+      user_id: "athlete-1",
+      title: "Tournament Bracket Released",
+      message: "Continental Athletics Grand Prix 100m heats have been seeded. You are Lane 4.",
+      type: "tournament",
+      is_read: false,
+      link_url: "/tournaments",
+      created_at: "2026-09-26T09:00:00Z"
+    },
+    {
+      id: "notif-4",
+      user_id: "coach-1",
+      title: "High Soreness / Overload Flag",
+      message: "Athlete Liam Walker logged Red Readiness (Score 46) reporting bilateral shin pain.",
+      type: "readiness",
+      is_read: false,
+      link_url: "/athletes",
+      created_at: "2026-09-26T07:45:00Z"
+    },
+    {
+      id: "notif-5",
+      user_id: "coach-1",
+      title: "Task Completed by Alex Chen",
+      message: "Alex Chen completed 'Heavy Trap-Bar Deadlift & Contrast Jumps' with proof attached.",
+      type: "task",
+      is_read: true,
+      link_url: "/tasks",
+      created_at: "2026-09-26T15:05:00Z"
+    }
+  ],
+
+  messages: [
+    {
+      id: "msg-1",
+      sender_id: "coach-1",
+      receiver_id: "athlete-1",
+      content: "Alex, your acceleration telemetry from yesterday was the cleanest we have recorded all season. Keep the focus sharp on the first 3 strides today.",
+      is_broadcast: false,
+      read_at: "2026-09-26T08:15:00Z",
+      created_at: "2026-09-26T08:00:00Z"
+    },
+    {
+      id: "msg-2",
+      sender_id: "athlete-1",
+      receiver_id: "coach-1",
+      content: "Thanks Coach! Hamstrings felt completely loose this morning. I'll test the electronic timing blocks at 5pm.",
+      is_broadcast: false,
+      read_at: "2026-09-26T08:35:00Z",
+      created_at: "2026-09-26T08:30:00Z"
+    },
+    {
+      id: "msg-3",
+      sender_id: "coach-1",
+      receiver_id: "athlete-5",
+      content: "Liam, I reviewed your morning vitals log. Hold off on field sprints today. We're substituting low-impact pool intervals to protect your shins.",
+      is_broadcast: false,
+      read_at: "2026-09-26T08:20:00Z",
+      created_at: "2026-09-26T08:05:00Z"
+    },
+    {
+      id: "msg-4",
+      sender_id: "coach-1",
+      receiver_id: null,
+      content: "Team Notice: Hydration stations are set up on Court 1. Reminder to submit daily morning vitals before 9:00 AM.",
+      is_broadcast: true,
+      read_at: null,
+      created_at: "2026-09-26T07:00:00Z"
+    }
+  ],
+
+  achievements: [
+    {
+      id: "ach-1",
+      athlete_id: "athlete-1",
+      badge_id: "streak_7",
+      title: "7-Day Training Streak",
+      description: "Completed assigned training modules consecutively for 7 days.",
+      icon_name: "Flame",
+      unlocked_at: "2026-09-19T18:00:00Z"
+    },
+    {
+      id: "ach-2",
+      athlete_id: "athlete-1",
+      badge_id: "consistency_30",
+      title: "Consistency Champion",
+      description: "Maintained above 90% workout adherence for the monthly training block.",
+      icon_name: "Trophy",
+      unlocked_at: "2026-09-20T12:00:00Z"
+    },
+    {
+      id: "ach-3",
+      athlete_id: "athlete-1",
+      badge_id: "pb_smasher",
+      title: "Personal Record Smashed",
+      description: "Clocked an official all-time personal best 10.18s 100m sprint.",
+      icon_name: "Zap",
+      unlocked_at: "2026-09-20T16:30:00Z"
+    },
+    {
+      id: "ach-4",
+      athlete_id: "athlete-1",
+      badge_id: "century_tasks",
+      title: "Century Club (100 Tasks)",
+      description: "Conquered 100 professional training sessions logged in Athlete 360.",
+      icon_name: "CheckCircle",
+      unlocked_at: "2026-09-24T19:00:00Z"
+    },
+    {
+      id: "ach-5",
+      athlete_id: "athlete-2",
+      badge_id: "gold_medalist",
+      title: "Pan-Pacific Gold",
+      description: "Took 1st place in the 100m Butterfly Finals.",
+      icon_name: "Medal",
+      unlocked_at: "2026-09-14T17:30:00Z"
+    }
+  ],
+
+  athlete_goals: [
+    {
+      id: "goal-1",
+      athlete_id: "athlete-1",
+      title: "Clock sub-10.12s 100m at Atlanta Grand Prix",
+      target_date: "2026-10-05",
+      metric_target: "10.12s",
+      current_value: "10.18s",
+      status: "active"
+    },
+    {
+      id: "goal-2",
+      athlete_id: "athlete-1",
+      title: "Maintain 95%+ Training Consistency for September",
+      target_date: "2026-09-30",
+      metric_target: "95%",
+      current_value: "96%",
+      status: "active"
+    },
+    {
+      id: "goal-3",
+      athlete_id: "athlete-1",
+      title: "Trap Bar Deadlift 200kg 1RM Target",
+      target_date: "2026-11-01",
+      metric_target: "200 kg",
+      current_value: "195 kg",
+      status: "active"
+    }
+  ],
+
+  smartwatch_devices: [
+    {
+      id: "sw-1",
+      athlete_id: "athlete-1",
+      device_name: "boAt Storm RTL",
+      model_identifier: "boAt-STORM-RTL",
+      connection_type: "BLE_GATT",
+      status: "Disconnected",
+      battery_level: null,
+      last_sync_at: null,
+      created_at: "2026-09-01T10:00:00Z"
+    }
+  ],
+
+  smartwatch_vitals_sync: []
+};
+

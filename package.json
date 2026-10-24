@@ -1,0 +1,16 @@
+{
+  "name": "athlete-360",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Athlete 360 - AI-Powered Athlete Management & Performance Tracking Platform",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "dev": "npx concurrently -k -n \"SERVER,CLIENT\" -c \"cyan,green\" \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}

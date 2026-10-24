@@ -1,26 +1,59 @@
+# Dependencies
+node_modules/
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Production builds
+dist/
+dist-ssr/
+*/dist/
+*.local
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.local
+
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*/__pycache__/
+*.py[cod]
+*$py.class
 .Python
 env/
 venv/
+.venv/
 ENV/
+*.pyo
+*.pyd
 
-# Scikit-Learn Model Binaries & DB (Local Runtime)
-*.pkl
-*.db
-athlete360-backend/athlete360.db
-athlete360-backend/model.pkl
-athlete360-backend/injury_model.pkl
+# Android / Gradle / IDE
+.gradle/
+*/.gradle/
+build/
+*/build/
+local.properties
+*/local.properties
+.idea/
+*/.idea/
+*.iml
+*/.externalNativeBuild/
+*/.cxx/
+/captures
 
-# Node / Vite
-node_modules/
-dist/
-.npm
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 *.log
-
-# Environment variables
-.env
-.env.local

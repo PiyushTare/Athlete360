@@ -1,0 +1,50 @@
+{
+  "total_records": 3200,
+  "dataset_breakdown": {
+    "Kaggle_Biometric_Longitudinal": 1200,
+    "Kaggle_AFR_1000": 1000,
+    "Kaggle_SIRP_600": 600,
+    "Athlete360_Platform_Longitudinal": 400
+  },
+  "class_distribution": {
+    "0": 1702,
+    "1": 1498
+  },
+  "sports_distribution": {
+    "Football": 588,
+    "Badminton": 583,
+    "Running": 490,
+    "Volleyball": 429,
+    "Cricket": 400,
+    "Tennis": 373,
+    "Basketball": 337
+  },
+  "features": [
+    "sport",
+    "heart_rate",
+    "baseline_hr",
+    "hr_deviation_bpm",
+    "spo2",
+    "spo2_deviation",
+    "daily_steps",
+    "step_trend_pct",
+    "sleep_duration_hours",
+    "sleep_quality_1_10",
+    "fatigue_1_10",
+    "muscle_soreness_1_10",
+    "recovery_score_perceived_1_10",
+    "physical_readiness_1_10",
+    "mental_readiness_1_10",
+    "protein_intake_grams",
+    "water_intake_liters",
+    "nutrition_adequate",
+    "training_duration_minutes",
+    "training_intensity_1_10",
+    "rpe_1_10",
+    "sessions_last_7d",
+    "high_intensity_sessions_7d",
+    "hours_since_intense_session"
+  ],
+  "target": "fit_to_play (1 = Fit to Play, 0 = Not Ready / Recovery Recommended)",
+  "harmonization_strategy": "Option B / C: Multimodal Sports Science Data Harmonization with Athlete-Specific Baseline Deviations"
+}
